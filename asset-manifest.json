@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tn-shopping/static/css/main.79f2852f.chunk.css",
+    "main.js": "/tn-shopping/static/js/main.6d42953c.chunk.js",
+    "main.js.map": "/tn-shopping/static/js/main.6d42953c.chunk.js.map",
+    "runtime-main.js": "/tn-shopping/static/js/runtime-main.d0330adf.js",
+    "runtime-main.js.map": "/tn-shopping/static/js/runtime-main.d0330adf.js.map",
+    "static/css/2.09d656f9.chunk.css": "/tn-shopping/static/css/2.09d656f9.chunk.css",
+    "static/js/2.42870aa2.chunk.js": "/tn-shopping/static/js/2.42870aa2.chunk.js",
+    "static/js/2.42870aa2.chunk.js.map": "/tn-shopping/static/js/2.42870aa2.chunk.js.map",
+    "static/js/3.d62c8d4c.chunk.js": "/tn-shopping/static/js/3.d62c8d4c.chunk.js",
+    "static/js/3.d62c8d4c.chunk.js.map": "/tn-shopping/static/js/3.d62c8d4c.chunk.js.map",
+    "index.html": "/tn-shopping/index.html",
+    "static/css/2.09d656f9.chunk.css.map": "/tn-shopping/static/css/2.09d656f9.chunk.css.map",
+    "static/css/main.79f2852f.chunk.css.map": "/tn-shopping/static/css/main.79f2852f.chunk.css.map",
+    "static/js/2.42870aa2.chunk.js.LICENSE.txt": "/tn-shopping/static/js/2.42870aa2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0330adf.js",
+    "static/css/2.09d656f9.chunk.css",
+    "static/js/2.42870aa2.chunk.js",
+    "static/css/main.79f2852f.chunk.css",
+    "static/js/main.6d42953c.chunk.js"
+  ]
+}
