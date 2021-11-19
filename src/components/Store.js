@@ -146,6 +146,7 @@ const classes = useStyles()
        
         <Box className={classes.storeContainer}>
         <img className={classes.logoLarge} src="images/tn-logo.png" alt="" />
+        {pathName == '/' ? <Box>
         <Typography variant="h3"><span className={classes.sloganUnder}>Behold the power</span> of<span className={classes.sloganGreen}>  TN Shopping!</span></Typography>
         <Carousel 
         className={classes.carousel} 
@@ -164,6 +165,7 @@ const classes = useStyles()
                     <p style={{fontFamily: "Quicksand, cursive"}} className="legend">New iPad mini now available</p>
                 </div>
             </Carousel>
+            </Box> : null}
 
            {pathName == '/' ? <Box className={classes.categoryBox}>
                 <Link to="/women's%20clothing" style={{textDecoration: "none"}}>
