@@ -150,7 +150,7 @@ const Payment = ({basketItems, completePurchase}) => {
                             
                             </tbody>
                 </table>
-              
+              <img style={{width: "50%"}} src="images/confirmation.jpg" alt="" />
                 </Box>
               
             </Box>
