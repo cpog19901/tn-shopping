@@ -67,7 +67,7 @@ flexDirection: "column"
 },
 
 categoryButtonWomen:{
-    background: `url(${"images/women-img.jpg"})`,
+    backgroundImage: `url(${"/tn-shopping/images/women-img.jpg"})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     padding: "10%",
@@ -77,7 +77,7 @@ categoryButtonWomen:{
 },
 
 categoryButtonMen:{
-    backgroundImage: `url(${"images/men-img.jpg"})`,
+    backgroundImage: `url(${"/tn-shopping/images/men-img.jpg"})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     padding: "10%",
@@ -87,7 +87,7 @@ categoryButtonMen:{
 },
 
 categoryButtonElectronics:{
-    backgroundImage: `url(${"images/electronics-img.jpg"})`,
+    backgroundImage: `url(${"/tn-shopping/images/electronics-img.jpg"})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     padding: "10%",
@@ -96,7 +96,7 @@ categoryButtonElectronics:{
    
 },
 categoryButtonJewellery:{
-    backgroundImage: `url(${"images/jewellery-img.jpg"})`,
+    backgroundImage: `url(${"/tn-shopping/images/jewellery-img.jpg"})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     padding: "10%",
@@ -123,7 +123,7 @@ const Store = ({allProducts, counter, addItem, assignFilter, filterValue}) => {
    const {category} = useParams()
 
 
-   const pathName = window.location.pathname;
+   let pathName = window.location.pathname;
    
 
 const handleClick = (e) =>{
@@ -145,29 +145,29 @@ const classes = useStyles()
         
        
         <Box className={classes.storeContainer}>
-        <img className={classes.logoLarge} src="images/tn-logo.png" alt="" />
-        {pathName == '/tn-shopping/' || pathName == '/'  ? <Box>
+        <img className={classes.logoLarge} src="/tn-shopping/images/tn-logo.png" alt="" />
+        {pathName == '/tn-shopping/'   ? <Box>
         <Typography variant="h3"><span className={classes.sloganUnder}>Behold the power</span> of<span className={classes.sloganGreen}>  TN Shopping!</span></Typography>
         <Carousel 
         className={classes.carousel} 
         showThumbs={false} 
         showStatus={false}>
                 <div>
-                    <img src="images/mens.jpg" />
+                    <img src="/tn-shopping/images/mens.jpg" />
                     <p style={{fontFamily: "Quicksand, cursive"}} className="legend">Checkout our new mens fashion line!</p>
                 </div>
                 <div>
-                    <img src="images/womens.jpg" />
+                    <img src="/tn-shopping/images/womens.jpg" />
                     <p style={{fontFamily: "Quicksand, cursive"}} className="legend">Great prices on womens summer gear!</p>
                 </div>
                 <div>
-                    <img src="images/ipad.jpg" />
+                    <img src="/tn-shopping/images/ipad.jpg" />
                     <p style={{fontFamily: "Quicksand, cursive"}} className="legend">New iPad mini now available</p>
                 </div>
             </Carousel>
             </Box> : null}
 
-           {pathName == '/tn-shopping/' || pathName == '/' ?  <Box className={classes.categoryBox}>
+           {pathName == '/tn-shopping/' ?  <Box className={classes.categoryBox}>
                 <Link to="/women's%20clothing" style={{textDecoration: "none"}}>
                 <Box className={classes.categoryButtonWomen}>
                 <Typography className={classes.categoryHeading} variant="h5">Women</Typography>

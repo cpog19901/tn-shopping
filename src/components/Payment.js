@@ -150,9 +150,9 @@ const Payment = ({basketItems, completePurchase}) => {
                             
                             </tbody>
                 </table>
-              <img style={{width: "50%"}} src="images/confirmation.jpg" alt="" />
-                </Box>
               
+                </Box>
+                <img style={{width: "200px"}} src="/tn-shopping/images/confirmation.jpg" alt="" />
             </Box>
             <Box style={{margin: "25px"}}>
                         
@@ -174,7 +174,7 @@ const Payment = ({basketItems, completePurchase}) => {
             </Box>
             </Box>   
             </Box>
-            <Link to="/confirmation"><Button variant="contained" color="primary" onClick={handleClick} >Complete payment</Button></Link>
+            <Link style={{textDecoration: "none"}} to="/confirmation"><Button variant="contained" color="primary" onClick={handleClick} >Complete payment</Button></Link>
          </Paper>
          
 

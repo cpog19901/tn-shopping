@@ -81,7 +81,7 @@ const Nav = ({counter, assignFilter}) => {
           
            
         
-        <Link to="/tn-shopping/"><img className={classes.navLogo} src="images/tn-logo.png" alt="" /></Link>
+        <Link to="/tn-shopping/"><img className={classes.navLogo} src="/tn-shopping/images/tn-logo.png" alt="" /></Link>
 
         
         </Box>

@@ -12,7 +12,7 @@ import Payment from "./components/Payment"
 import Nav from "./components/Nav"
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import { v4 as uuidv4 } from 'uuid';
-
+import Footer from "./components/Footer"
 
 let basketItemsArray =[];
 
@@ -140,7 +140,7 @@ body: JSON.stringify({order})
     
   
     </Switch>
-    
+    <Footer/>
     </Router> 
     </ThemeProvider>
     </div>

@@ -43,7 +43,11 @@ fontWeight:"bold"
    },
    basketTableData:{
        padding: "20px"
-   }
+   },
+    basketCheckoutBtn:{
+        margin: "10px"
+    }
+
     
     });
 
@@ -123,7 +127,7 @@ const classes = useStyles()
                    </td>
                    <td className={classes.basketTableData}>
                    { pathName =="/basket" ?
-                   <Button onClick={handleClick} color="primary" variant="contained" value={basketProduct.id}>Remove Item</Button>
+                   <Button onClick={handleClick} color="primary" variant="contained"  value={basketProduct.id}>Remove Item</Button>
                    : null
                    }
                    </td>
@@ -153,8 +157,8 @@ const classes = useStyles()
           </tbody>
           </table>
           { pathName =="/basket" ?
-         <Link  to="/checkout" style={{textDecoration: "none"}}><Button variant="contained" color="primary">Proceed to checkout</Button></Link> 
-         : <Link to="/basket" style={{textDecoration: "none"}}><Button variant="contained" color="primary">Edit basket</Button></Link> 
+         <Link  to="/checkout" style={{textDecoration: "none"}}><Button className={classes.basketCheckoutBtn} variant="contained" color="primary">Proceed to checkout</Button></Link> 
+         : <Link to="/basket" style={{textDecoration: "none"}}><Button className={classes.basketCheckoutBtn} variant="contained" color="primary">Edit basket</Button></Link> 
                    }
         </div>
     );
