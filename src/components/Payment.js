@@ -62,8 +62,9 @@ deliveryInputsBox:{
 const Payment = ({basketItems, completePurchase}) => {
 
     const handleClick =()=>{
-        const createdOrderNumber = uuidv4()
-        completePurchase(createdOrderNumber)
+        const createdOrderNumber = uuidv4();;
+        const storeOrderNumber = JSON.stringify(localStorage.setItem('storedOrder',createdOrderNumber ));
+        completePurchase(createdOrderNumber);
     }
 
     const classes = useStyles();

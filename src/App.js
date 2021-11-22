@@ -46,7 +46,7 @@ function App() {
 const [allProducts, setAllProducts] = useState([]);
 const [counter, setCounter] = useState(0);
 const [basketItems, setBasketItems] = useState([]);
-const [order, setOrder] = useState("");
+
 
 
 
@@ -92,13 +92,15 @@ const removeItem = (itemId) =>{
 
 const sendOrder = (orderId) =>{
 
+  const deliveryInfo = JSON.parse(localStorage.getItem('deliveryInfo'))
+
 const order= {
   orderRef: orderId,
   orderItems: basketItems,
-  orderDeliveryInfo: ""
+  orderDeliveryInfo: deliveryInfo
 }
 
-fetch("http://localhost:8000/posts",{
+fetch("https://tn-store-db.herokuapp.com/orders",{
 method: "POST",
 headers: {"Content-Type": "application/json"},
 body: JSON.stringify({order})
@@ -137,8 +139,6 @@ body: JSON.stringify({order})
     <Route path="/payment"  render={() => <Payment counter={counter} basketItems={basketItems} completePurchase={sendOrder}/>}  />
     <Route path="/confirmation"  render={() => <Confirmation basketItems={basketItems}/>}  />
     <Route path="/:category"  render={() => <Store allProducts={allProducts} counter={counter} setCounter={setCounter} addItem={addItem}/>}  />
-    
-  
     </Switch>
     <Footer/>
     </Router> 

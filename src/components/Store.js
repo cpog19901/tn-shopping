@@ -145,7 +145,9 @@ const classes = useStyles()
         
        
         <Box className={classes.storeContainer}>
+        
         <img className={classes.logoLarge} src="/tn-shopping/images/tn-logo.png" alt="" />
+       
         {pathName == '/tn-shopping/'   ? <Box>
         <Typography variant="h3"><span className={classes.sloganUnder}>Behold the power</span> of<span className={classes.sloganGreen}>  TN Shopping!</span></Typography>
         <Carousel 

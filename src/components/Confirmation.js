@@ -1,5 +1,6 @@
 import React from 'react';
 import {Box, Typography, Paper, Grid, Button, AppBar, Toolbar} from "@material-ui/core";
+import {Link} from "react-router-dom"
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme)=>{
@@ -52,25 +53,30 @@ returnButton:{
     }
 })
 
+
+
 const Confirmation = () => {
+
+    const getStoredOrder = localStorage.getItem('storedOrder');
+ console.log(getStoredOrder)
 
     const classes= useStyles();
 
     return (
         <Box className={classes.confirmationBox}>
             <Paper className={classes.confirmationPaper} elevation={12} >
-            <img src="images/tn-logo.png" alt="" />
+            <img src="/tn-shopping/images/tn-logo.png" alt="" />
                 <Typography className={classes.confirmationHeading} variant="h5">Thank you for ordering with TN Shopping!</Typography>
                 <Box className={classes.confirmationDetailsBox}>
                     <Box>
-                    <img className={classes.confirmationImage} src="images/confirmation.jpg" alt="" />
+                    <img className={classes.confirmationImage} src="/tn-shopping/images/confirmation.jpg" alt="" />
                     </Box>
                     <Box className={classes.orderDetailsBox}>
-                    <Typography variant="h5"> Your order number is 123456</Typography>
+                    <Typography variant="h5"> Your order number is {getStoredOrder.toUpperCase()}</Typography>
                     <Typography>Should you have any issues with your order please contact support@tnshopping.com</Typography>
                     </Box>
                 </Box>
-                <Button className={classes.returnButton} variant="contained" color="primary">Return to store</Button>
+               <Link style={{textDecoration:"none"}} to="/tn-shopping/"> <Button className={classes.returnButton} variant="contained" color="primary">Return to store</Button></Link>
             </Paper>
         </Box>
     );

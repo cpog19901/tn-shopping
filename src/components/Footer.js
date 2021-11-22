@@ -14,6 +14,7 @@ const useStyles = makeStyles(theme =>{
         justifyContent: "center",
         padding: "2%",
         flexDirection: "column",
+        color: "#232324",
         [theme.breakpoints.up("sm")]:{
             flexDirection: "row",
             }

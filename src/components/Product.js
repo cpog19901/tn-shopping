@@ -17,7 +17,8 @@ const useStyles = makeStyles(theme=>{
     productCard:{
     //  display: "flex",
     alignItems: "center",
-    padding: "15px"
+    padding: "15px",
+    marginBottom: "25px"
     },
     
     productBtn:{
