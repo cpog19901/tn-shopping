@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme =>{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "2%",
+        padding: "2% 0",
         flexDirection: "column",
         color: "#232324",
         [theme.breakpoints.up("sm")]:{
